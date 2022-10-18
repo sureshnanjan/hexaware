@@ -1,0 +1,3 @@
+// Object Literal
+
+const myObject = {};
