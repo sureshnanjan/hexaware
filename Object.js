@@ -25,6 +25,7 @@ function CreateParticipant(name){
 
 const Suresh = CreateTrainer("Suresh");
 const deekshit = CreateParticipant("Deekshit");
+export default{CreateTrainer};
 
-//
+
 

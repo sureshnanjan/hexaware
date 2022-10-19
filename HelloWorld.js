@@ -1,11 +1,13 @@
 // Write a message to the console.
-let myName = "Suresh";
-console.log(__dirname);
-const FIXEDVALUE = 10000;
-console.log('hello world!');
+
+let myName = "Otkur";
+const dir=__dirname;
+var mess='Hello!';
 function SayHello(){
-    console.log("Hello Hello JavaScript in VsCode");
+    console.log(mess + " " + myName);
+    console.log("Directory for this objct is " + dir);
 }
 SayHello();
 
-
+let nm=require("./Object.js");
+console.log(nm.myName);
