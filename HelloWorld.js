@@ -9,5 +9,3 @@ function SayHello(){
 }
 SayHello();
 
-let nm=require("./Object.js");
-console.log(nm.myName);
