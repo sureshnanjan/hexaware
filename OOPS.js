@@ -1,16 +1,26 @@
-function Trainee()
-{
-	this.Name="Name";
-	throw new Error("You cannot create an instance of Abstract Class");
+function ask (question, yes, no){
+ if(confirm(question)===true){
+    return yes()
+ }  else return no();
 }
-Trainee.prototype.print=function()
-{
-	return "Trainee is: "+this.Name;
+  
+function showOk(){
+return "You agreed.";
+
 }
-function KG(Name)
-{
-	this.Name=Name;
+
+function confirm(question){
+if(!question==null){
+    return showOk();
+} else return showCancel();
+
+return question;
+
 }
-KG.prototype=Object.create(Trainee.prototype);
-var kg=new KG("Otkur");
-console.log(kg.print());
+
+function showCancel(){
+return "You canceled the execution.";
+
+}
+
+console.log(ask("Do you agreee?", showOk, showCancel));
